@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1040C1E38C41E002E1304 /* AppDelegate.swift */; };
+		CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1040E1E38C41E002E1304 /* ViewController.swift */; };
+		CAE104121E38C41E002E1304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE104101E38C41E002E1304 /* Main.storyboard */; };
+		CAE104151E38C41E002E1304 /* BarnaBotSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAE104131E38C41E002E1304 /* BarnaBotSample.xcdatamodeld */; };
+		CAE104171E38C41E002E1304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE104161E38C41E002E1304 /* Assets.xcassets */; };
+		CAE1041A1E38C41E002E1304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE104181E38C41E002E1304 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CAE104091E38C41E002E1304 /* BarnaBotSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarnaBotSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE1040C1E38C41E002E1304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAE1040E1E38C41E002E1304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAE104111E38C41E002E1304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAE104141E38C41E002E1304 /* BarnaBotSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BarnaBotSample.xcdatamodel; sourceTree = "<group>"; };
+		CAE104161E38C41E002E1304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE104191E38C41E002E1304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAE1041B1E38C41E002E1304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE104061E38C41E002E1304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAE104001E38C41E002E1304 = {
+			isa = PBXGroup;
+			children = (
+				CAE1040B1E38C41E002E1304 /* BarnaBotSample */,
+				CAE1040A1E38C41E002E1304 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE1040A1E38C41E002E1304 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE104091E38C41E002E1304 /* BarnaBotSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE1040B1E38C41E002E1304 /* BarnaBotSample */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1040C1E38C41E002E1304 /* AppDelegate.swift */,
+				CAE1040E1E38C41E002E1304 /* ViewController.swift */,
+				CAE104101E38C41E002E1304 /* Main.storyboard */,
+				CAE104161E38C41E002E1304 /* Assets.xcassets */,
+				CAE104181E38C41E002E1304 /* LaunchScreen.storyboard */,
+				CAE1041B1E38C41E002E1304 /* Info.plist */,
+				CAE104131E38C41E002E1304 /* BarnaBotSample.xcdatamodeld */,
+			);
+			path = BarnaBotSample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE104081E38C41E002E1304 /* BarnaBotSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE1041E1E38C41E002E1304 /* Build configuration list for PBXNativeTarget "BarnaBotSample" */;
+			buildPhases = (
+				CAE104051E38C41E002E1304 /* Sources */,
+				CAE104061E38C41E002E1304 /* Frameworks */,
+				CAE104071E38C41E002E1304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarnaBotSample;
+			productName = BarnaBotSample;
+			productReference = CAE104091E38C41E002E1304 /* BarnaBotSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE104011E38C41E002E1304 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Mickael Bordage";
+				TargetAttributes = {
+					CAE104081E38C41E002E1304 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CAE104041E38C41E002E1304 /* Build configuration list for PBXProject "BarnaBotSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE104001E38C41E002E1304;
+			productRefGroup = CAE1040A1E38C41E002E1304 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE104081E38C41E002E1304 /* BarnaBotSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE104071E38C41E002E1304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE1041A1E38C41E002E1304 /* LaunchScreen.storyboard in Resources */,
+				CAE104171E38C41E002E1304 /* Assets.xcassets in Resources */,
+				CAE104121E38C41E002E1304 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE104051E38C41E002E1304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */,
+				CAE104151E38C41E002E1304 /* BarnaBotSample.xcdatamodeld in Sources */,
+				CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CAE104101E38C41E002E1304 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE104111E38C41E002E1304 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAE104181E38C41E002E1304 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE104191E38C41E002E1304 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAE1041C1E38C41E002E1304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAE1041D1E38C41E002E1304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE1041F1E38C41E002E1304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BarnaBotSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.BarnaBotSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CAE104201E38C41E002E1304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BarnaBotSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.BarnaBotSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE104041E38C41E002E1304 /* Build configuration list for PBXProject "BarnaBotSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE1041C1E38C41E002E1304 /* Debug */,
+				CAE1041D1E38C41E002E1304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE1041E1E38C41E002E1304 /* Build configuration list for PBXNativeTarget "BarnaBotSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE1041F1E38C41E002E1304 /* Debug */,
+				CAE104201E38C41E002E1304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CAE104131E38C41E002E1304 /* BarnaBotSample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CAE104141E38C41E002E1304 /* BarnaBotSample.xcdatamodel */,
+			);
+			currentVersion = CAE104141E38C41E002E1304 /* BarnaBotSample.xcdatamodel */;
+			path = BarnaBotSample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CAE104011E38C41E002E1304 /* Project object */;
+}
