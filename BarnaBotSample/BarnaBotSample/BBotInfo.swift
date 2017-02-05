@@ -18,6 +18,18 @@ public class BBotInfo : NSObject{
     var botType:String
     var descriptionBot:String
     
+  
+    // default bot
+    override init() {
+        self.name = BarnaBot.config.Barnabot.defaultName
+        self.img = BarnaBot.config.Barnabot.defaultImg
+        self.old = BarnaBot.config.Barnabot.defaultOld
+        self.gender = BarnaBot.config.Barnabot.defaultGender
+        self.botType = BarnaBot.config.Barnabot.defaultBotType
+        self.descriptionBot = BarnaBot.config.Barnabot.defaultDescrition
+    }
+    
+    
     init(name:String,img:String,old:Int, gender:String,botType:String,descriptionBot:String){
         self.name = name
         self.img = img
@@ -26,6 +38,7 @@ public class BBotInfo : NSObject{
         self.botType = botType
         self.descriptionBot = descriptionBot
     }
+    
     
     public override var description: String{
         var result:String = "Bot info : \n"

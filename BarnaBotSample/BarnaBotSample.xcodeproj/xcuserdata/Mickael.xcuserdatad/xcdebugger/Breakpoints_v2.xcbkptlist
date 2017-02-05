@@ -33,6 +33,38 @@
             endingLineNumber = "19"
             landmarkName = "BBotInfo"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarnaBotSample.BBotInfo.descriptionBot.getter : Swift.String"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/BBotInfo.swift"
+                  timestampString = "508000850.306723"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarnaBotSample.BBotInfo.descriptionBot.setter : Swift.String"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/BBotInfo.swift"
+                  timestampString = "508000850.3092"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -49,6 +81,54 @@
             endingLineNumber = "38"
             landmarkName = "BBotInfo"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarnaBotSample/BBotInfo.swift"
+            timestampString = "508000881.584861"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "BBotInfo"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarnaBotSample.BBotInfo.init (name : Swift.String, img : Swift.String, old : Swift.Int, gender : Swift.String, botType : Swift.String, descriptionBot : Swift.String) -&gt; BarnaBotSample.BBotInfo"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/BBotInfo.swift"
+                  timestampString = "508000881.795291"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "199">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarnaBotSample.BBotInfo.__allocating_init (name : Swift.String, img : Swift.String, old : Swift.Int, gender : Swift.String, botType : Swift.String, descriptionBot : Swift.String) -&gt; BarnaBotSample.BBotInfo"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/BBotInfo.swift"
+                  timestampString = "508000881.796713"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
