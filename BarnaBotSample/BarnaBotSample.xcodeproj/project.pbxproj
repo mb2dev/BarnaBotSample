@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA61E9711E4766C3009E6134 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61E9701E4766C3009E6134 /* UserInfo.swift */; };
 		CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1040C1E38C41E002E1304 /* AppDelegate.swift */; };
 		CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1040E1E38C41E002E1304 /* ViewController.swift */; };
 		CAE104121E38C41E002E1304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE104101E38C41E002E1304 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA61E9701E4766C3009E6134 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CAE104091E38C41E002E1304 /* BarnaBotSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarnaBotSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE1040C1E38C41E002E1304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAE1040E1E38C41E002E1304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA61E96F1E4766A9009E6134 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CA61E9701E4766C3009E6134 /* UserInfo.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		CAE104001E38C41E002E1304 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		CAE1040B1E38C41E002E1304 /* BarnaBotSample */ = {
 			isa = PBXGroup;
 			children = (
+				CA61E96F1E4766A9009E6134 /* model */,
 				CAE1040C1E38C41E002E1304 /* AppDelegate.swift */,
 				CAE1040E1E38C41E002E1304 /* ViewController.swift */,
 				CAE104101E38C41E002E1304 /* Main.storyboard */,
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA61E9711E4766C3009E6134 /* UserInfo.swift in Sources */,
 				CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */,
 				CAE104151E38C41E002E1304 /* BarnaBotSample.xcdatamodeld in Sources */,
 				CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */,
@@ -301,6 +313,7 @@
 				CAE104201E38C41E002E1304 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
