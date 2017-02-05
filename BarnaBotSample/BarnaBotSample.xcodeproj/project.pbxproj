@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA61E9711E4766C3009E6134 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61E9701E4766C3009E6134 /* UserInfo.swift */; };
+		CA61E9731E47699E009E6134 /* BBotInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61E9721E47699E009E6134 /* BBotInfo.swift */; };
 		CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1040C1E38C41E002E1304 /* AppDelegate.swift */; };
 		CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1040E1E38C41E002E1304 /* ViewController.swift */; };
 		CAE104121E38C41E002E1304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE104101E38C41E002E1304 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		CA61E9701E4766C3009E6134 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		CA61E9721E47699E009E6134 /* BBotInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBotInfo.swift; sourceTree = "<group>"; };
 		CAE104091E38C41E002E1304 /* BarnaBotSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarnaBotSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE1040C1E38C41E002E1304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAE1040E1E38C41E002E1304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				CA61E9701E4766C3009E6134 /* UserInfo.swift */,
+				CA61E9721E47699E009E6134 /* BBotInfo.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */,
 				CAE104151E38C41E002E1304 /* BarnaBotSample.xcdatamodeld in Sources */,
 				CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */,
+				CA61E9731E47699E009E6134 /* BBotInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
