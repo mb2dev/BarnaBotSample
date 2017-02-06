@@ -11,12 +11,14 @@ import Foundation
 
 public class BBotInfo : NSObject{
     
-    var name:String
-    var img:String
-    var old:Int
-    var gender:String
-    var botType:String
-    var descriptionBot:String
+
+    
+    public var name:String
+    public var img:String
+    public var old:Int
+    public var gender:String
+    public var botType:String
+    public var descriptionBot:String
     
   
     // default bot
@@ -46,9 +48,8 @@ public class BBotInfo : NSObject{
         result.append("\n\t - img : " + self.img)
         result.append("\n\t - old : " + String(self.old))
         result.append("\n\t - gender : " + self.gender)
-        result.append("\n\t botType : " + self.botType)
-        result.append("\n\t descriptionBot : " + self.descriptionBot)
+        result.append("\n\t - botType : " + self.botType)
+        result.append("\n\t - descriptionBot : " + self.descriptionBot)
         return result
     }
-    
 }

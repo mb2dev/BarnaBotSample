@@ -12,6 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let Json = ParsingFileBarnabot.sharedIntances.loadFile();
+        let Barnabot = ParsingFileBarnabot.sharedIntances.readJsonProfileBarnabot(object: Json)
+        print(Barnabot.description)
+        print(ParsingFileBarnabot.sharedIntances.readJsonSearch(object: Json))
+        
         // Do any additional setup after loading the view, typically from a nib.
     
     }

@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarnaBotSample/BBotInfo.swift"
-            timestampString = "507996859.962021"
+            timestampString = "508014839.187102"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "BBotInfo"
             landmarkType = "3">
             <Locations>
@@ -38,31 +38,31 @@
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BarnaBotSample.BBotInfo.descriptionBot.getter : Swift.String"
+                  symbolName = "BarnaBotSample.BBotInfo.init (name : Swift.String, img : Swift.String, old : Swift.Int, gender : Swift.String, botType : Swift.String, descriptionBot : Swift.String) -&gt; BarnaBotSample.BBotInfo"
                   moduleName = "BarnaBotSample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/BBotInfo.swift"
-                  timestampString = "508000850.306723"
+                  timestampString = "508014792.297903"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "53">
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "199">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BarnaBotSample.BBotInfo.descriptionBot.setter : Swift.String"
+                  symbolName = "BarnaBotSample.BBotInfo.__allocating_init (name : Swift.String, img : Swift.String, old : Swift.Int, gender : Swift.String, botType : Swift.String, descriptionBot : Swift.String) -&gt; BarnaBotSample.BBotInfo"
                   moduleName = "BarnaBotSample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/BBotInfo.swift"
-                  timestampString = "508000850.3092"
+                  timestampString = "508014792.299769"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "95">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "68">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarnaBotSample/BBotInfo.swift"
-            timestampString = "507999604.656894"
+            timestampString = "508016356.512643"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "BBotInfo"
             landmarkType = "3">
          </BreakpointContent>
@@ -86,49 +86,270 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarnaBotSample/BBotInfo.swift"
-            timestampString = "508000881.584861"
+            timestampString = "508014839.187102"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "BBotInfo"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarnaBotSample/parsingFileBarnabot.swift"
+            timestampString = "508016022.860464"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "readJsonProfileBarnabot(object:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarnaBotSample/BBotInfo.swift"
+            timestampString = "508016356.512643"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "init(name:img:old:gender:botType:descriptionBot:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarnaBotSample/parsingFileBarnabot.swift"
+            timestampString = "508014867.848223"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ParsingFileBarnabot"
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BarnaBotSample.BBotInfo.init (name : Swift.String, img : Swift.String, old : Swift.Int, gender : Swift.String, botType : Swift.String, descriptionBot : Swift.String) -&gt; BarnaBotSample.BBotInfo"
+                  symbolName = "BarnaBotSample.ParsingFileBarnabot.__allocating_init () -&gt; BarnaBotSample.ParsingFileBarnabot"
                   moduleName = "BarnaBotSample"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/BBotInfo.swift"
-                  timestampString = "508000881.795291"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "199">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BarnaBotSample.BBotInfo.__allocating_init (name : Swift.String, img : Swift.String, old : Swift.Int, gender : Swift.String, botType : Swift.String, descriptionBot : Swift.String) -&gt; BarnaBotSample.BBotInfo"
-                  moduleName = "BarnaBotSample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/BBotInfo.swift"
-                  timestampString = "508000881.796713"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/parsingFileBarnabot.swift"
+                  timestampString = "508014868.27513"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "68">
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarnaBotSample.ParsingFileBarnabot.__deallocating_deinit"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/parsingFileBarnabot.swift"
+                  timestampString = "508014868.278022"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarnaBotSample.ParsingFileBarnabot.deinit"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/parsingFileBarnabot.swift"
+                  timestampString = "508014868.280358"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarnaBotSample.ParsingFileBarnabot.init () -&gt; BarnaBotSample.ParsingFileBarnabot"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/parsingFileBarnabot.swift"
+                  timestampString = "508014868.281764"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "4">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarnaBotSample/parsingFileBarnabot.swift"
+            timestampString = "508015694.345271"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "loadFile()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarnaBotSample/parsingFileBarnabot.swift"
+            timestampString = "508015592.187618"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "loadFile()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarnaBotSample.ParsingFileBarnabot.loadFile () -&gt; ()"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/parsingFileBarnabot.swift"
+                  timestampString = "508015592.403036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1560">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarnaBotSample.ParsingFileBarnabot.loadFile () -&gt; ()"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/parsingFileBarnabot.swift"
+                  timestampString = "508015592.404463"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1898">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarnaBotSample/parsingFileBarnabot.swift"
+            timestampString = "508015607.574248"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ParsingFileBarnabot"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_8326D96DF4B78B6FBABA957B99A6D451_func0"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/parsingFileBarnabot.swift"
+                  timestampString = "508015607.887808"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarnaBotSample.ParsingFileBarnabot.sharedIntances.unsafeMutableAddressor : BarnaBotSample.ParsingFileBarnabot"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/parsingFileBarnabot.swift"
+                  timestampString = "508015607.889257"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static BarnaBotSample.ParsingFileBarnabot.sharedIntances.getter : BarnaBotSample.ParsingFileBarnabot"
+                  moduleName = "BarnaBotSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Mickael/Documents/ProjectESGI/BarnaBotSample/BarnaBotSample/BarnaBotSample/parsingFileBarnabot.swift"
+                  timestampString = "508015607.890584"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarnaBotSample/parsingFileBarnabot.swift"
+            timestampString = "508016449.56464"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "readJsonProfileBarnabot(object:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

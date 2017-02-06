@@ -1,0 +1,28 @@
+{
+    "profileBarnabot": {
+        "name": "Barnabot",
+        "img": "test",
+        "old": 12,
+        "gender": "men",
+        "defaultCharacter": "default",
+        "description": "Barnabot le bot ! "
+    },
+    "search": {
+        "user": {
+            "word": [],
+            "priority": "",
+            "responce": {
+                "type": "message",
+                "value": "Bonjour %name%"
+            },
+            "settings": {
+                "word": [],
+                "priority": "",
+                "responce": {
+                    "type": "goTo",
+                    "value": "settingViewController"
+                }
+            }
+        }
+    }
+}

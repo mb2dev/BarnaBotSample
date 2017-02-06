@@ -22,7 +22,23 @@ struct BarnaBot{
         }
     }
     
-
+    struct Json{
+        
+        struct ProfileBarnabot {
+            static let jsonObject = "profileBarnabot"
+            static let name = "name"
+            static let old = "old"
+            static let img = "img"
+            static let gender = "gender"
+            static let description = "description"
+            static let defaultCharacter = "defaultCharacter";
+        }
+        
+        struct Search {
+            static let search = "search"
+        }
+    
+    }
     
     
 }

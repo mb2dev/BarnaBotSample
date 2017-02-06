@@ -10,6 +10,10 @@
 		CA61E9711E4766C3009E6134 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61E9701E4766C3009E6134 /* UserInfo.swift */; };
 		CA61E9731E47699E009E6134 /* BBotInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61E9721E47699E009E6134 /* BBotInfo.swift */; };
 		CA61E9761E47787C009E6134 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61E9751E47787C009E6134 /* Constant.swift */; };
+		CA61E9781E478CCE009E6134 /* parsingFileBarnabot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61E9771E478CCE009E6134 /* parsingFileBarnabot.swift */; };
+		CA61E97A1E479074009E6134 /* Barnabot.json in Resources */ = {isa = PBXBuildFile; fileRef = CA61E9791E479074009E6134 /* Barnabot.json */; };
+		CA61E97C1E47C0A6009E6134 /* DialogueStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61E97B1E47C0A6009E6134 /* DialogueStep.swift */; };
+		CA61E97E1E47C885009E6134 /* Responce.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA61E97D1E47C885009E6134 /* Responce.swift */; };
 		CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1040C1E38C41E002E1304 /* AppDelegate.swift */; };
 		CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1040E1E38C41E002E1304 /* ViewController.swift */; };
 		CAE104121E38C41E002E1304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE104101E38C41E002E1304 /* Main.storyboard */; };
@@ -22,6 +26,10 @@
 		CA61E9701E4766C3009E6134 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CA61E9721E47699E009E6134 /* BBotInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBotInfo.swift; sourceTree = "<group>"; };
 		CA61E9751E47787C009E6134 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CA61E9771E478CCE009E6134 /* parsingFileBarnabot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parsingFileBarnabot.swift; sourceTree = "<group>"; };
+		CA61E9791E479074009E6134 /* Barnabot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Barnabot.json; sourceTree = "<group>"; };
+		CA61E97B1E47C0A6009E6134 /* DialogueStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogueStep.swift; sourceTree = "<group>"; };
+		CA61E97D1E47C885009E6134 /* Responce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responce.swift; sourceTree = "<group>"; };
 		CAE104091E38C41E002E1304 /* BarnaBotSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarnaBotSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE1040C1E38C41E002E1304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAE1040E1E38C41E002E1304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +56,8 @@
 			children = (
 				CA61E9701E4766C3009E6134 /* UserInfo.swift */,
 				CA61E9721E47699E009E6134 /* BBotInfo.swift */,
+				CA61E97B1E47C0A6009E6134 /* DialogueStep.swift */,
+				CA61E97D1E47C885009E6134 /* Responce.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -56,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				CA61E9751E47787C009E6134 /* Constant.swift */,
+				CA61E9771E478CCE009E6134 /* parsingFileBarnabot.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -88,6 +99,7 @@
 				CAE104181E38C41E002E1304 /* LaunchScreen.storyboard */,
 				CAE1041B1E38C41E002E1304 /* Info.plist */,
 				CAE104131E38C41E002E1304 /* BarnaBotSample.xcdatamodeld */,
+				CA61E9791E479074009E6134 /* Barnabot.json */,
 			);
 			path = BarnaBotSample;
 			sourceTree = "<group>";
@@ -153,6 +165,7 @@
 			files = (
 				CAE1041A1E38C41E002E1304 /* LaunchScreen.storyboard in Resources */,
 				CAE104171E38C41E002E1304 /* Assets.xcassets in Resources */,
+				CA61E97A1E479074009E6134 /* Barnabot.json in Resources */,
 				CAE104121E38C41E002E1304 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,9 +180,12 @@
 				CA61E9711E4766C3009E6134 /* UserInfo.swift in Sources */,
 				CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */,
 				CAE104151E38C41E002E1304 /* BarnaBotSample.xcdatamodeld in Sources */,
+				CA61E97C1E47C0A6009E6134 /* DialogueStep.swift in Sources */,
 				CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */,
+				CA61E9781E478CCE009E6134 /* parsingFileBarnabot.swift in Sources */,
 				CA61E9731E47699E009E6134 /* BBotInfo.swift in Sources */,
 				CA61E9761E47787C009E6134 /* Constant.swift in Sources */,
+				CA61E97E1E47C885009E6134 /* Responce.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
