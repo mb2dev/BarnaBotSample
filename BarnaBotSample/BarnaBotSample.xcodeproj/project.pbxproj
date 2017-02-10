@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3B72CA1E4E5AD2005F6263 /* BBBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72C31E4E5AD2005F6263 /* BBBuilder.swift */; };
+		CA3B72CB1E4E5AD2005F6263 /* BBDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72C41E4E5AD2005F6263 /* BBDialog.swift */; };
+		CA3B72CC1E4E5AD2005F6263 /* BBNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72C51E4E5AD2005F6263 /* BBNext.swift */; };
+		CA3B72CD1E4E5AD2005F6263 /* BBSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72C61E4E5AD2005F6263 /* BBSession.swift */; };
+		CA3B72CE1E4E5AD2005F6263 /* BBSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72C71E4E5AD2005F6263 /* BBSessionDelegate.swift */; };
+		CA3B72CF1E4E5AD2005F6263 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72C81E4E5AD2005F6263 /* Stack.swift */; };
+		CA3B72D01E4E5AD2005F6263 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72C91E4E5AD2005F6263 /* User.swift */; };
+		CA3B72D21E4E5AE7005F6263 /* BBIntentDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72D11E4E5AE7005F6263 /* BBIntentDialog.swift */; };
+		CA6F8F141E491EF40094EFEE /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = CA6F8F131E491EF40094EFEE /* Cartfile */; };
+		CA6F8F1A1E4927040094EFEE /* JSQMessages.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA6F8F171E49206C0094EFEE /* JSQMessages.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1040C1E38C41E002E1304 /* AppDelegate.swift */; };
 		CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1040E1E38C41E002E1304 /* ViewController.swift */; };
 		CAE104121E38C41E002E1304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE104101E38C41E002E1304 /* Main.storyboard */; };
@@ -15,7 +25,31 @@
 		CAE1041A1E38C41E002E1304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE104181E38C41E002E1304 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CA6F8F191E4926F20094EFEE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA6F8F1A1E4927040094EFEE /* JSQMessages.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CA3B72C31E4E5AD2005F6263 /* BBBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBBuilder.swift; sourceTree = "<group>"; };
+		CA3B72C41E4E5AD2005F6263 /* BBDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBDialog.swift; sourceTree = "<group>"; };
+		CA3B72C51E4E5AD2005F6263 /* BBNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBNext.swift; sourceTree = "<group>"; };
+		CA3B72C61E4E5AD2005F6263 /* BBSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBSession.swift; sourceTree = "<group>"; };
+		CA3B72C71E4E5AD2005F6263 /* BBSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBSessionDelegate.swift; sourceTree = "<group>"; };
+		CA3B72C81E4E5AD2005F6263 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		CA3B72C91E4E5AD2005F6263 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CA3B72D11E4E5AE7005F6263 /* BBIntentDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBIntentDialog.swift; sourceTree = "<group>"; };
+		CA6F8F131E491EF40094EFEE /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		CA6F8F151E49203B0094EFEE /* JSQMessages_bridge_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQMessages_bridge_header.h; sourceTree = "<group>"; };
+		CA6F8F171E49206C0094EFEE /* JSQMessages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQMessages.framework; path = Carthage/Build/iOS/JSQMessages.framework; sourceTree = "<group>"; };
 		CAE104091E38C41E002E1304 /* BarnaBotSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarnaBotSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE1040C1E38C41E002E1304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAE1040E1E38C41E002E1304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,11 +71,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA6F8F161E49206C0094EFEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA6F8F171E49206C0094EFEE /* JSQMessages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CAE104001E38C41E002E1304 = {
 			isa = PBXGroup;
 			children = (
+				CA6F8F131E491EF40094EFEE /* Cartfile */,
 				CAE1040B1E38C41E002E1304 /* BarnaBotSample */,
 				CAE1040A1E38C41E002E1304 /* Products */,
+				CA6F8F161E49206C0094EFEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +100,14 @@
 		CAE1040B1E38C41E002E1304 /* BarnaBotSample */ = {
 			isa = PBXGroup;
 			children = (
+				CA3B72C31E4E5AD2005F6263 /* BBBuilder.swift */,
+				CA3B72C41E4E5AD2005F6263 /* BBDialog.swift */,
+				CA3B72C51E4E5AD2005F6263 /* BBNext.swift */,
+				CA3B72C61E4E5AD2005F6263 /* BBSession.swift */,
+				CA3B72C71E4E5AD2005F6263 /* BBSessionDelegate.swift */,
+				CA3B72C81E4E5AD2005F6263 /* Stack.swift */,
+				CA3B72C91E4E5AD2005F6263 /* User.swift */,
+				CA6F8F151E49203B0094EFEE /* JSQMessages_bridge_header.h */,
 				CAE1040C1E38C41E002E1304 /* AppDelegate.swift */,
 				CAE1040E1E38C41E002E1304 /* ViewController.swift */,
 				CAE104101E38C41E002E1304 /* Main.storyboard */,
@@ -63,6 +115,7 @@
 				CAE104181E38C41E002E1304 /* LaunchScreen.storyboard */,
 				CAE1041B1E38C41E002E1304 /* Info.plist */,
 				CAE104131E38C41E002E1304 /* BarnaBotSample.xcdatamodeld */,
+				CA3B72D11E4E5AE7005F6263 /* BBIntentDialog.swift */,
 			);
 			path = BarnaBotSample;
 			sourceTree = "<group>";
@@ -77,6 +130,7 @@
 				CAE104051E38C41E002E1304 /* Sources */,
 				CAE104061E38C41E002E1304 /* Frameworks */,
 				CAE104071E38C41E002E1304 /* Resources */,
+				CA6F8F191E4926F20094EFEE /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -128,6 +182,7 @@
 			files = (
 				CAE1041A1E38C41E002E1304 /* LaunchScreen.storyboard in Resources */,
 				CAE104171E38C41E002E1304 /* Assets.xcassets in Resources */,
+				CA6F8F141E491EF40094EFEE /* Cartfile in Resources */,
 				CAE104121E38C41E002E1304 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,9 +194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3B72D21E4E5AE7005F6263 /* BBIntentDialog.swift in Sources */,
 				CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */,
+				CA3B72CF1E4E5AD2005F6263 /* Stack.swift in Sources */,
+				CA3B72CA1E4E5AD2005F6263 /* BBBuilder.swift in Sources */,
+				CA3B72CC1E4E5AD2005F6263 /* BBNext.swift in Sources */,
+				CA3B72CB1E4E5AD2005F6263 /* BBDialog.swift in Sources */,
 				CAE104151E38C41E002E1304 /* BarnaBotSample.xcdatamodeld in Sources */,
+				CA3B72CE1E4E5AD2005F6263 /* BBSessionDelegate.swift in Sources */,
 				CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */,
+				CA3B72D01E4E5AD2005F6263 /* User.swift in Sources */,
+				CA3B72CD1E4E5AD2005F6263 /* BBSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +325,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BarnaBotSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = esgi.BarnaBotSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = BarnaBotSample/JSQMessages_bridge_header.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,10 +343,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BarnaBotSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = esgi.BarnaBotSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = BarnaBotSample/JSQMessages_bridge_header.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -301,6 +376,7 @@
 				CAE104201E38C41E002E1304 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

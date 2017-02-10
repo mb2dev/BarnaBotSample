@@ -8,18 +8,136 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: JSQMessagesViewController,BBSessionDelegate {
+    
+    var messages = [JSQMessage]()
+    var showTypingIndicatorTimer:Timer?;
+    
+    let botBuilder : BBBuilder = BBBuilder("Barnabot")
+    let botSession : BBSession = BBSession.sharedInstance
+    
+    func send(_ msg: String) {
+        print("send from BBSessionDelegate")
+        let message = JSQMessage(senderId: botBuilder.botName, senderDisplayName:   botBuilder.botName, date: Date.init(), text: msg as String!)
+        self.messages.append(message!)
+        self.finishSendingMessage(animated: true)
+    }
+    
+    // TODO inutile
+    func receive(_ msg : String) {
+        print("bonjour")
+        botSession.receive(msg)
+    }
+    
+    
     override func viewDidLoad() {
+        print("bonjour")
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.navigationBar.layer.zPosition = -1;
+        self.senderId = "1234"
+        self.senderDisplayName="1234"
+        self.collectionView?.collectionViewLayout.outgoingAvatarViewSize = CGSize.zero
+        self.collectionView?.collectionViewLayout.incomingAvatarViewSize = CGSize.zero
+        
+        botBuilder
+            .dialog(path: "/", dialog: BBDialog(waterfall: [{(session : BBSession, next : BBDialog?) -> Void in
+                if let name = session.userData["name"] {
+                    if let _next = next {
+                        _next.next(session, nil)
+                    }
+                } else {
+                    session.beginDialog(path: "/profile")
+                }
+                },
+                                                            {(session : BBSession, next : BBDialog?) -> Void in
+                                                                if let name = session.userData["name"] {
+                                                                    //session.send(format: "Hello %s!", args: name as AnyObject)
+                                                                    session.send("Hello \(name)!")
+                                                                    session.endDialog()
+                                                                }
+                }]))
+            .dialog(path: "/profile", dialog : BBDialog(waterfall: [{(session : BBSession, next : BBDialog?) -> Void in
+                session.promptText("Hi! What is your name?")
+                
+                },{(session : BBSession, next : BBDialog?) -> Void in
+                    print("on passe ici")
+                    session.promptText("Hi " + session.result)
+                    session.promptText("My name is Barnabot")
+                    session.userData.updateValue(session.result, forKey: "name")
+                    session.endDialog()
+                }]))
+        
+        botBuilder.dialog(path: "/end", dialog : BBDialog(waterfall: [{(session : BBSession, next : BBDialog?) -> Void in
+            session.promptText("OK! See you tomorrow?")
+            },{(session : BBSession, next : BBDialog?) -> Void in
+                session.endDialog()
+            }]))
+        
+        botBuilder.matches(regex: "bonjour", idDialog: "/",priority: 0);
+        botBuilder.matches(regex: "au revoir", idDialog: "/end",priority: 0);
+        botSession.botBuilder = botBuilder
+        botSession.delegate = self
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        botSession.beginConversation()
     }
-
-
+    
+    
+    
+    
+    
+    override func didPressSend(_ button: UIButton, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
+        
+        messages += [JSQMessage(senderId: self.senderId, displayName: self.senderDisplayName, text: text)]
+        
+        self.finishSendingMessage(animated: false)
+        receive(text)
+        
+        
+    }
+    
+    func onNewMessageReceived(notification:NSNotification)
+    {
+        
+    }
+    
+    func UserTyping(notification:NSNotification)
+    {
+        self.showTypingIndicator = true;
+        
+        
+    }
+    
+    
+    func TypingFire()
+    {
+        self.showTypingIndicator = false;
+    }
+    
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData! {
+        return self.messages[indexPath.item]
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.messages.count
+    }
+    
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
+        
+        
+        let message = self.messages[indexPath.item];
+        let factory = JSQMessagesBubbleImageFactory();
+        
+        if(message.senderId == self.senderId)
+        {
+            return factory!.outgoingMessagesBubbleImage(with: UIColor.lightGray);
+        }
+        return factory!.incomingMessagesBubbleImage(with: UIColor.blue)
+    }
+    
+    
 }
 
