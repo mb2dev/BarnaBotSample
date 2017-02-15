@@ -1,0 +1,6 @@
+framework module Pods_MyBarnabot {
+  umbrella header "Pods-MyBarnabot-umbrella.h"
+
+  export *
+  module * { export * }
+}
