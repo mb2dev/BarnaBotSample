@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA38B9B51E5351FE00CCD497 /* GVCopying.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9B41E5351FE00CCD497 /* GVCopying.swift */; };
+		CA38B9B81E53526400CCD497 /* LuisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9B71E53526400CCD497 /* LuisModel.swift */; };
+		CA38B9BA1E5352C600CCD497 /* TopScoringIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9B91E5352C600CCD497 /* TopScoringIntent.swift */; };
+		CA38B9BC1E53542300CCD497 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9BB1E53542300CCD497 /* Entities.swift */; };
+		CA38B9BF1E535CC300CCD497 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9BE1E535CC300CCD497 /* Constant.swift */; };
+		CA38B9C11E535CE400CCD497 /* LuisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9C01E535CE400CCD497 /* LuisManager.swift */; };
 		CA3B72CA1E4E5AD2005F6263 /* BBBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72C31E4E5AD2005F6263 /* BBBuilder.swift */; };
 		CA3B72CB1E4E5AD2005F6263 /* BBDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72C41E4E5AD2005F6263 /* BBDialog.swift */; };
 		CA3B72CC1E4E5AD2005F6263 /* BBNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B72C51E4E5AD2005F6263 /* BBNext.swift */; };
@@ -39,6 +45,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA38B9B41E5351FE00CCD497 /* GVCopying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVCopying.swift; sourceTree = "<group>"; };
+		CA38B9B71E53526400CCD497 /* LuisModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuisModel.swift; sourceTree = "<group>"; };
+		CA38B9B91E5352C600CCD497 /* TopScoringIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScoringIntent.swift; sourceTree = "<group>"; };
+		CA38B9BB1E53542300CCD497 /* Entities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		CA38B9BE1E535CC300CCD497 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CA38B9C01E535CE400CCD497 /* LuisManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuisManager.swift; sourceTree = "<group>"; };
 		CA3B72C31E4E5AD2005F6263 /* BBBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBBuilder.swift; sourceTree = "<group>"; };
 		CA3B72C41E4E5AD2005F6263 /* BBDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBDialog.swift; sourceTree = "<group>"; };
 		CA3B72C51E4E5AD2005F6263 /* BBNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBNext.swift; sourceTree = "<group>"; };
@@ -71,6 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA38B9B61E53521C00CCD497 /* modelLuis */ = {
+			isa = PBXGroup;
+			children = (
+				CA38B9B71E53526400CCD497 /* LuisModel.swift */,
+				CA38B9BB1E53542300CCD497 /* Entities.swift */,
+				CA38B9B91E5352C600CCD497 /* TopScoringIntent.swift */,
+			);
+			name = modelLuis;
+			sourceTree = "<group>";
+		};
+		CA38B9BD1E535CAC00CCD497 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CA38B9BE1E535CC300CCD497 /* Constant.swift */,
+				CA38B9C01E535CE400CCD497 /* LuisManager.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		CA6F8F161E49206C0094EFEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +131,9 @@
 		CAE1040B1E38C41E002E1304 /* BarnaBotSample */ = {
 			isa = PBXGroup;
 			children = (
+				CA38B9BD1E535CAC00CCD497 /* Utils */,
+				CA38B9B61E53521C00CCD497 /* modelLuis */,
+				CA38B9B41E5351FE00CCD497 /* GVCopying.swift */,
 				CA3B72C31E4E5AD2005F6263 /* BBBuilder.swift */,
 				CA3B72C41E4E5AD2005F6263 /* BBDialog.swift */,
 				CA3B72C51E4E5AD2005F6263 /* BBNext.swift */,
@@ -194,15 +228,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA38B9BC1E53542300CCD497 /* Entities.swift in Sources */,
+				CA38B9B51E5351FE00CCD497 /* GVCopying.swift in Sources */,
 				CA3B72D21E4E5AE7005F6263 /* BBIntentDialog.swift in Sources */,
+				CA38B9BF1E535CC300CCD497 /* Constant.swift in Sources */,
 				CAE1040F1E38C41E002E1304 /* ViewController.swift in Sources */,
+				CA38B9C11E535CE400CCD497 /* LuisManager.swift in Sources */,
 				CA3B72CF1E4E5AD2005F6263 /* Stack.swift in Sources */,
 				CA3B72CA1E4E5AD2005F6263 /* BBBuilder.swift in Sources */,
 				CA3B72CC1E4E5AD2005F6263 /* BBNext.swift in Sources */,
 				CA3B72CB1E4E5AD2005F6263 /* BBDialog.swift in Sources */,
+				CA38B9BA1E5352C600CCD497 /* TopScoringIntent.swift in Sources */,
 				CAE104151E38C41E002E1304 /* BarnaBotSample.xcdatamodeld in Sources */,
 				CA3B72CE1E4E5AD2005F6263 /* BBSessionDelegate.swift in Sources */,
 				CAE1040D1E38C41E002E1304 /* AppDelegate.swift in Sources */,
+				CA38B9B81E53526400CCD497 /* LuisModel.swift in Sources */,
 				CA3B72D01E4E5AD2005F6263 /* User.swift in Sources */,
 				CA3B72CD1E4E5AD2005F6263 /* BBSession.swift in Sources */,
 			);

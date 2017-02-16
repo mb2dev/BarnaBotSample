@@ -16,8 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let msgVC:ViewController = ViewController()
+        msgVC.title = "Barnabot"
+        
+        let navigationVC:UINavigationController = UINavigationController(rootViewController: msgVC)
+        
+        let frame = UIScreen.main.bounds
+        window = UIWindow(frame: frame)
+        
+        window!.rootViewController = navigationVC
+        window!.makeKeyAndVisible()
         return true
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

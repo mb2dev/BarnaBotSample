@@ -14,8 +14,10 @@ class ViewController: JSQMessagesViewController,BBSessionDelegate {
     var messages = [JSQMessage]()
     var showTypingIndicatorTimer:Timer?;
     
-    let botBuilder : BBBuilder = BBBuilder("Barnabot")
-    let botSession : BBSession = BBSession.sharedInstance
+    var botBuilder : BBBuilder = BBBuilder("Barnabot")
+    var botSession : BBSession = BBSession.sharedInstance
+
+    
     
     func send(_ msg: String) {
         print("send from BBSessionDelegate")
@@ -30,6 +32,10 @@ class ViewController: JSQMessagesViewController,BBSessionDelegate {
         botSession.receive(msg)
     }
     
+    func writing() -> Void{
+       print("bonjour")
+    }
+    
     
     override func viewDidLoad() {
         print("bonjour")
@@ -41,6 +47,31 @@ class ViewController: JSQMessagesViewController,BBSessionDelegate {
         self.collectionView?.collectionViewLayout.incomingAvatarViewSize = CGSize.zero
         
         botBuilder
+            .dialog(path: "/", [{(session : BBSession, next : BBDialog?) -> Void in
+                if let name = session.userData["name"] {
+                    if let _next = next {
+                        _next.next!(session, nil)
+                    }
+                } else {
+                    session.beginDialog(path: "/profile")
+                }
+            }])
+            .dialog(path: "/profile", [{(session : BBSession, next : BBDialog?) -> Void in
+                print("yop")
+                self.send("Hi! What is your name?")
+                //session.promptText("Hi! What is your name?")
+                },{(session : BBSession, next : BBDialog?) -> Void in
+                    print("on passe ici")
+                    session.promptText("Hi " + session.result)
+                    session.promptText("My name is Barnabot")
+                    session.userData.updateValue(session.result, forKey: "name")
+                    session.endDialog()
+                }])
+
+                    
+                    
+        
+        /*botBuilder
             .dialog(path: "/", dialog: BBDialog(waterfall: [{(session : BBSession, next : BBDialog?) -> Void in
                 if let name = session.userData["name"] {
                     if let _next = next {
@@ -50,12 +81,12 @@ class ViewController: JSQMessagesViewController,BBSessionDelegate {
                     session.beginDialog(path: "/profile")
                 }
                 },
-                                                            {(session : BBSession, next : BBDialog?) -> Void in
-                                                                if let name = session.userData["name"] {
-                                                                    //session.send(format: "Hello %s!", args: name as AnyObject)
-                                                                    session.send("Hello \(name)!")
-                                                                    session.endDialog()
-                                                                }
+                {(session : BBSession, next : BBDialog?) -> Void in
+                    if let name = session.userData["name"] {
+                        //session.send(format: "Hello %s!", args: name as AnyObject)
+                        session.send("Hello \(name)!")
+                        session.endDialog()
+                    }
                 }]))
             .dialog(path: "/profile", dialog : BBDialog(waterfall: [{(session : BBSession, next : BBDialog?) -> Void in
                 session.promptText("Hi! What is your name?")
@@ -72,11 +103,11 @@ class ViewController: JSQMessagesViewController,BBSessionDelegate {
             session.promptText("OK! See you tomorrow?")
             },{(session : BBSession, next : BBDialog?) -> Void in
                 session.endDialog()
-            }]))
+            }]))*/
         
-        botBuilder.matches(regex: "bonjour", idDialog: "/",priority: 0);
-        botBuilder.matches(regex: "au revoir", idDialog: "/end",priority: 0);
-        botSession.botBuilder = botBuilder
+        //botBuilder.matches(regex: "bonjour", idDialog: "/",priority: 0);
+        //botBuilder.matches(regex: "au revoir", idDialog: "/end",priority: 0);
+        //botSession.botBuilder = botBuilder
         botSession.delegate = self
         
     }
