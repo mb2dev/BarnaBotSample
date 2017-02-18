@@ -44,6 +44,7 @@ class BBSession {
     }
     
     var human_feeling : Bool = true
+    var luis_connector : Bool = false
     var delegate : BBSessionDelegate?
     /// Stores the result of a prompt to pass the value to the next dialog step
     var result : String = String()
@@ -111,9 +112,9 @@ class BBSession {
     }
     
     private func safeBegin(_ dialog : BBDialog){
-        if(dialog != dialogStack.last){
+        //if(dialog == dialogStack.last){
             self.beginDialog(dialog)
-        }
+        //}
     }
     
     /**
@@ -276,20 +277,34 @@ class BBSession {
         
         // TODO envoyer à LUIS / recast.ai
         print("received msg : \(msg)")
-        
-        // ATTENTION à ne pas relancer un dialog déjà en cours
-        // (en recevant 2 fois "bonjour" à la suite par exemple)
-        var found : [BBIntentDialog] = matches(text: msg)
-        if found.count > 0 {
-            found = found.sorted { $0.priority > $1.priority }
-            if let dialog = found.first {
-                self.safeBegin(dialog)
+        if luis_connector && !waiting_for_uinput {
+            print("on passe ici")
+            LuisManager.sharedIntances.RequestLuis(msg: msg){ responce in
+                print("callback", responce.description)
+                self.beginDialog(path: responce.topScoring.intent)
+                //self.result = msg
+                //self.resume()
+               
+            }
+        }else{
+            // ATTENTION à ne pas relancer un dialog déjà en cours
+            // (en recevant 2 fois "bonjour" à la suite par exemple)
+            var found : [BBIntentDialog] = matches(text: msg)
+            if found.count > 0 && !waiting_for_uinput {
+                found = found.sorted { $0.priority > $1.priority }
+                if let dialog = found.first {
+                    self.safeBegin(dialog)
+                }
+            }else if !waiting_for_uinput {
+                self.beginDialog(path : "/default")
+            }else{
+                self.result = msg
+                self.resume()
             }
         }
-        waiting_for_uinput = false
-        self.result = msg
-        self.resume()
+        self.waiting_for_uinput = false
     }
+    
     
     /**
      Analyzes user input to detect intents
@@ -300,7 +315,7 @@ class BBSession {
         var result:[BBIntentDialog] = [BBIntentDialog]()
         for(regex,intentDialog) in (delegate?.botBuilder.intents)!{
             let nsString = text as NSString
-            let results = regex.matches(in: text, range: NSRange(location: 0, length: nsString.length))
+            let results = regex.matches(in: text.lowercased(), range: NSRange(location: 0, length: nsString.length))
             //return results.map { nsString.substring(with: $0.range)}
             if (results.map { nsString.substring(with: $0.range)}).count > 0{
                 result.append(intentDialog)

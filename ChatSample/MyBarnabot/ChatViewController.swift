@@ -22,14 +22,16 @@ class ChatViewController: JSQMessagesViewController, BBSessionDelegate {
     var botSession : BBSession = BBSession.sharedInstance
     
     func send(_ msg: String) {
-        print("send from BBSessionDelegate")
+        self.showTypingIndicator = false
+        print("send from BBSessionDelegate : " + msg)
         let message = JSQMessage(senderId: botBuilder.botName, senderDisplayName: botBuilder.botName, date: Date.init(), text: msg as String!)
         self.messages.append(message!)
         self.finishSendingMessage(animated: true)
+    
     }
     
     func writing(){
-        
+        self.showTypingIndicator = true
     }
     
     // TODO inutile
@@ -115,8 +117,24 @@ class ChatViewController: JSQMessagesViewController, BBSessionDelegate {
                     session.endDialog()
                     
                 }])
+        botBuilder.dialog(path: "/end", [{(session : BBSession) -> Void in
+            
+            if let name = session.getUserData("name") {
+                //session.send(format: "Hello %s!", args: name as AnyObject)
+                session.promptText("Bye \(name)!")
+            }
+            }])
         
         
+        botBuilder.dialog(path: "/default", [{ (session : BBSession) -> Void in
+            session.send("Sorry, I don't understand your request.")
+            session.beginDialog(path: "/help")
+        }]).dialog(path: "/help", [{ (session : BBSession) -> Void in
+            session.send("Available Keywords: au revoir, bonjour")
+        }])
+        
+        botBuilder.matches(regex: "au revoir", redir: "/end", priority: 0)
+        botBuilder.matches(regex: "^bonjour$", redir: "/", priority: 0)
         botSession.delegate = self
         
         print("viewDidLoad")

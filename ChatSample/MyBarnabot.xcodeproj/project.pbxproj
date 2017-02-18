@@ -29,10 +29,14 @@
 		765E67601E4763BC0036B9B7 /* BBBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E675E1E4763BC0036B9B7 /* BBBuilder.swift */; };
 		765E67621E476CBF0036B9B7 /* BBNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E67611E476CBF0036B9B7 /* BBNext.swift */; };
 		765E67631E476CBF0036B9B7 /* BBNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E67611E476CBF0036B9B7 /* BBNext.swift */; };
-		76B926881E47A302006CD683 /* jsq_messages_sample.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 76B926871E47A302006CD683 /* jsq_messages_sample.m4a */; };
 		76B9268A1E47A39A006CD683 /* DemoConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B926891E47A39A006CD683 /* DemoConversation.swift */; };
 		76DE6B201E53ACF0005D058D /* BBIntentDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DE6B1F1E53ACF0005D058D /* BBIntentDialog.swift */; };
 		9350FD1AA5A244026D39C73D /* Pods_MyBarnabot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A63C79EAAD02E2E271450E /* Pods_MyBarnabot.framework */; };
+		CA38B9D31E55ABBF00CCD497 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9D01E55ABBF00CCD497 /* Entities.swift */; };
+		CA38B9D41E55ABBF00CCD497 /* LuisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9D11E55ABBF00CCD497 /* LuisModel.swift */; };
+		CA38B9D51E55ABBF00CCD497 /* TopScoringIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9D21E55ABBF00CCD497 /* TopScoringIntent.swift */; };
+		CA38B9D81E55ABCB00CCD497 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9D61E55ABCB00CCD497 /* Constant.swift */; };
+		CA38B9D91E55ABCB00CCD497 /* LuisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38B9D71E55ABCB00CCD497 /* LuisManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,12 +72,16 @@
 		765E675B1E475E4F0036B9B7 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		765E675E1E4763BC0036B9B7 /* BBBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBBuilder.swift; sourceTree = "<group>"; };
 		765E67611E476CBF0036B9B7 /* BBNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBNext.swift; sourceTree = "<group>"; };
-		76B926871E47A302006CD683 /* jsq_messages_sample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = jsq_messages_sample.m4a; path = ../../JSQMessagesViewController/JSQMessagesDemo/jsq_messages_sample.m4a; sourceTree = "<group>"; };
 		76B926891E47A39A006CD683 /* DemoConversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoConversation.swift; sourceTree = "<group>"; };
 		76DE6B1F1E53ACF0005D058D /* BBIntentDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBIntentDialog.swift; sourceTree = "<group>"; };
 		8064F85850189A4502FA31F5 /* Pods-MyBarnabotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBarnabotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyBarnabotTests/Pods-MyBarnabotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B5477B43CFB4ADD63EE06AB /* Pods-MyBarnabot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBarnabot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyBarnabot/Pods-MyBarnabot.debug.xcconfig"; sourceTree = "<group>"; };
 		91164685F225CCDDCF4F4EEB /* Pods-MyBarnabot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBarnabot.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyBarnabot/Pods-MyBarnabot.release.xcconfig"; sourceTree = "<group>"; };
+		CA38B9D01E55ABBF00CCD497 /* Entities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		CA38B9D11E55ABBF00CCD497 /* LuisModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuisModel.swift; sourceTree = "<group>"; };
+		CA38B9D21E55ABBF00CCD497 /* TopScoringIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScoringIntent.swift; sourceTree = "<group>"; };
+		CA38B9D61E55ABCB00CCD497 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CA38B9D71E55ABCB00CCD497 /* LuisManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuisManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +147,8 @@
 		765E67281E475D080036B9B7 /* MyBarnabot */ = {
 			isa = PBXGroup;
 			children = (
+				CA38B9CF1E55AB2500CCD497 /* Utils */,
+				CA38B9CE1E55AB1800CCD497 /* modelLuis */,
 				765E67291E475D080036B9B7 /* AppDelegate.swift */,
 				765E672B1E475D080036B9B7 /* ViewController.swift */,
 				765E672D1E475D080036B9B7 /* Main.storyboard */,
@@ -154,7 +164,6 @@
 				761974EC1E47A12B00E77DEE /* SettingsTableViewController.swift */,
 				76B926891E47A39A006CD683 /* DemoConversation.swift */,
 				761974EE1E47A14000E77DEE /* Conversation.swift */,
-				76B926871E47A302006CD683 /* jsq_messages_sample.m4a */,
 				765E675B1E475E4F0036B9B7 /* Stack.swift */,
 				762B672C1E477B2700104050 /* ChatViewController.swift */,
 			);
@@ -168,6 +177,25 @@
 				765E67401E475D090036B9B7 /* Info.plist */,
 			);
 			path = MyBarnabotTests;
+			sourceTree = "<group>";
+		};
+		CA38B9CE1E55AB1800CCD497 /* modelLuis */ = {
+			isa = PBXGroup;
+			children = (
+				CA38B9D01E55ABBF00CCD497 /* Entities.swift */,
+				CA38B9D11E55ABBF00CCD497 /* LuisModel.swift */,
+				CA38B9D21E55ABBF00CCD497 /* TopScoringIntent.swift */,
+			);
+			name = modelLuis;
+			sourceTree = "<group>";
+		};
+		CA38B9CF1E55AB2500CCD497 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CA38B9D61E55ABCB00CCD497 /* Constant.swift */,
+				CA38B9D71E55ABCB00CCD497 /* LuisManager.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				765E67341E475D080036B9B7 /* LaunchScreen.storyboard in Resources */,
-				76B926881E47A302006CD683 /* jsq_messages_sample.m4a in Resources */,
 				765E67311E475D080036B9B7 /* Assets.xcassets in Resources */,
 				765E672F1E475D080036B9B7 /* Main.storyboard in Resources */,
 			);
@@ -376,14 +403,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				765E675F1E4763BC0036B9B7 /* BBBuilder.swift in Sources */,
+				CA38B9D81E55ABCB00CCD497 /* Constant.swift in Sources */,
 				765E672C1E475D080036B9B7 /* ViewController.swift in Sources */,
 				76DE6B201E53ACF0005D058D /* BBIntentDialog.swift in Sources */,
+				CA38B9D41E55ABBF00CCD497 /* LuisModel.swift in Sources */,
 				762B672D1E477B2700104050 /* ChatViewController.swift in Sources */,
+				CA38B9D31E55ABBF00CCD497 /* Entities.swift in Sources */,
 				765E674D1E475DC30036B9B7 /* BBSessionDelegate.swift in Sources */,
 				765E67501E475DD00036B9B7 /* BBDialog.swift in Sources */,
 				765E675C1E475E4F0036B9B7 /* Stack.swift in Sources */,
+				CA38B9D91E55ABCB00CCD497 /* LuisManager.swift in Sources */,
 				765E67621E476CBF0036B9B7 /* BBNext.swift in Sources */,
 				761974ED1E47A12B00E77DEE /* SettingsTableViewController.swift in Sources */,
+				CA38B9D51E55ABBF00CCD497 /* TopScoringIntent.swift in Sources */,
 				765E672A1E475D080036B9B7 /* AppDelegate.swift in Sources */,
 				765E674A1E475DAF0036B9B7 /* BBSession.swift in Sources */,
 				76B9268A1E47A39A006CD683 /* DemoConversation.swift in Sources */,

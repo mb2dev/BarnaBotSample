@@ -55,14 +55,14 @@ let AvatarIdWoz = "309-41802-93823"
 //
 // Create an avatar with Image
 
-let AvatarLeonard = JSQMessagesAvatarImageFactory.avatarImage(withUserInitials: "DL", backgroundColor: UIColor.jsq_messageBubbleGreen(), textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12), diameter: 12)
+let AvatarLeonard = JSQMessagesAvatarImageFactory.avatarImage(withUserInitials: "B", backgroundColor: UIColor.jsq_messageBubbleGreen(), textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12), diameter: 12)
 
 let AvatarCook = JSQMessagesAvatarImageFactory.avatarImage(withUserInitials: "TC", backgroundColor: UIColor.gray, textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12), diameter:12)
 
 // Create avatar with Placeholder Image
 let AvatarJobs = JSQMessagesAvatarImageFactory.avatarImage(withPlaceholder: UIImage(named:"demo_avatar_jobs")!, diameter: 12)
 
-let AvatarWoz = JSQMessagesAvatarImageFactory.avatarImage(withUserInitials: "SW", backgroundColor: UIColor.jsq_messageBubbleGreen(), textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12), diameter: 12)
+let AvatarWoz = JSQMessagesAvatarImageFactory.avatarImage(withUserInitials: "U", backgroundColor: UIColor.jsq_messageBubbleGreen(), textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12), diameter: 12)
 
 let AvatarSquires = JSQMessagesAvatarImageFactory.avatarImage(withUserInitials: "JSQ", backgroundColor: UIColor.gray, textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12), diameter: 12)
 
